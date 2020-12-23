@@ -1,0 +1,57 @@
+/*
+	this->whiteRooks = 0x81;
+	this->whiteHorses = 0x42;
+	this->whiteBishops = 0x24;
+	this->whiteQueen = 0x08;
+	this->whiteKing = 0x10;
+	this->whitePawns = 0xFF00;
+
+	this->blackRooks = 0x8100000000000000;
+	this->blackHorses = 0x4200000000000000;
+	this->blackBishops = 0x2400000000000000;
+	this->blackKing = 0x0800000000000000;
+	this->blackQueen = 0x1000000000000000;
+	this->blackPawns = 0x00FF000000000000;
+	
+	U64 tmp[16] = {
+		0x81, 0x42, 0x24,
+		0x08, 0x10, 0xFF00,
+		 0x8100000000000000, 0x4200000000000000, 0x2400000000000000,
+		 0x0800000000000000, 0x1000000000000000, 0x00FF000000000000
+	};
+	*/
+
+	//cout << bChars << '\n';
+	//cout << "Number of position boards (should be 14): " + numOfPositionBoards + '\n';
+	//cout << numOfPositionBoards;
+	//cout << "\n";
+
+	/*
+	enum Pieces { 
+		whiteRooks, whiteHorses, whiteBishops,
+		whiteQueen, whiteKing, whitePawns,
+		blackRooks, blackHorses, blackBishops,
+		blackQueen, blackKing, blackPawns,
+	};
+
+
+	enum Pieces {
+		R1, N1, B1, Q, K, B2, N2, R2,
+		Pa, Pb, Pc, Pd, Pe, Pf, Pg, Ph
+	};
+	*/
+
+	//char allPieces[64];
+
+	//U64 whiteRooks[2], whiteHorses[2], whiteBishops[2], whiteQueens[1], whiteKing[1], whitePawns[8];
+	//U64 blackRooks[2], blackHorses[2], blackBishops[2], blackQueens[1], blackKing[1], blackPawns[8];
+	
+	int numOfPositionBoards = 14;
+	U64* allPositionBoards[14] = {
+		whiteRooks, whiteHorses, whiteBishops,
+		whiteQueens, whiteKing, whiteBishops, whitePawns,
+		blackRooks, blackHorses, blackBishops,
+		blackQueens, blackKing, blackPawns, blackPawns
+	};
+
+	char pieceNameMap[7] = { 'R', 'N', 'B', 'Q', 'K', 'p' };
