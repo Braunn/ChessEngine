@@ -141,11 +141,17 @@
   <ItemGroup>
     <ClCompile Include="Bitboards.cpp" />
     <ClCompile Include="ChessEngine.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Move.cpp" />
     <ClCompile Include="Position.cpp" />
+    <ClCompile Include="SearchNode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bitboards.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Move.h" />
     <ClInclude Include="Position.h" />
+    <ClInclude Include="SearchNode.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="debug_ref.txt" />
